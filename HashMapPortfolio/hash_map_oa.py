@@ -182,7 +182,9 @@ class HashMap:
 
     def empty_buckets(self) -> int:
         """
-        TODO: Write this implementation
+        This is the imitated version from hash_map_sc.py version of the empty_buckets method where we use a for loop, 
+        we can instead use self.capacity-self.size for open addressing in this method. I use a for loop to double 
+        check my updates from all my method implementations work correctly.
         """
         empty_bucket = 0
         for i in range(self.buckets.length()):
